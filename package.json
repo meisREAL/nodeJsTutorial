@@ -1,0 +1,24 @@
+{
+  "name": "nodejstutorial",
+  "version": "1.0.0",
+  "description": "tutorial for node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meisREAL/nodeJsTutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meisREAL/nodeJsTutorial/issues"
+  },
+  "homepage": "https://github.com/meisREAL/nodeJsTutorial#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
