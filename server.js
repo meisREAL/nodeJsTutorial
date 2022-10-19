@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     // res.end();
 
     // NORMAL
-    if (req.url === '/api/products') {
+    if (req.url === '/api/products' && req.method === 'GET') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.write(JSON.stringify(products));
         res.end();
