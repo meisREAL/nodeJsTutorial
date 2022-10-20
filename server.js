@@ -1,4 +1,5 @@
 const http = require('http');
+const { getProducts } = require('./controllers/productController');
 
 const server = http.createServer((req, res) => {
     // MOST BASIC RES
@@ -9,9 +10,10 @@ const server = http.createServer((req, res) => {
 
     // NORMAL
     if (req.url === '/api/products' && req.method === 'GET') {
-        res.writeHead(200, { 'Content-Type': 'application/json' });
-        res.write(JSON.stringify(products));
-        res.end();
+        // res.writeHead(200, { 'Content-Type': 'application/json' });
+        // res.write(JSON.stringify(products));
+        // res.end();
+        getProducts(req, res);
     } else {
         res.writeHead(404, { 'Content-Type': 'application/json' });
         res.write(JSON.stringify({ message: 'Route not found' }));
