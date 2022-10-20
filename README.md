@@ -9,3 +9,4 @@ Instead of data base, products.json is used
     b) dev: nodemon server.js
 4) server.js is entry point
 5) in server.js "http create server" stuff
+6) Model and controller 
